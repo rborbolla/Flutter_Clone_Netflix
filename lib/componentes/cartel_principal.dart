@@ -90,43 +90,51 @@ class Cartel_Principal extends StatelessWidget {
   }
 
   Widget botonera() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Column(
+    return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 15.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Icon(
-              Icons.check,
-              color: Colors.white,
+            Column(
+              children: <Widget>[
+                Icon(
+                  Icons.check,
+                  color: Colors.white,
+                ),
+                SizedBox(
+                  height: 3.0,
+                ),
+                Text(
+                  "Mi lista",
+                  style: TextStyle(color: Colors.white, fontSize: 10.0),
+                ),
+              ],
             ),
-            Text(
-              "Mi lista",
-              style: TextStyle(color: Colors.white, fontSize: 10.0),
+            FlatButton.icon(
+              onPressed: () {},
+              color: Colors.white,
+              icon: Icon(
+                Icons.play_arrow,
+                color: Colors.black,
+              ),
+              label: Text('Reproducir'),
+            ),
+            Column(
+              children: <Widget>[
+                Icon(
+                  Icons.info_outline,
+                  color: Colors.white,
+                ),
+                SizedBox(
+                  height: 3.0,
+                ),
+                Text(
+                  "Información",
+                  style: TextStyle(color: Colors.white, fontSize: 10.0),
+                ),
+              ],
             ),
           ],
-        ),
-        FlatButton.icon(
-          onPressed: () {},
-          color: Colors.white,
-          icon: Icon(
-            Icons.play_arrow,
-            color: Colors.black,
-          ),
-          label: Text('Reproducir'),
-        ),
-        Column(
-          children: <Widget>[
-            Icon(
-              Icons.info_outline,
-              color: Colors.white,
-            ),
-            Text(
-              "Información",
-              style: TextStyle(color: Colors.white, fontSize: 10.0),
-            ),
-          ],
-        ),
-      ],
-    );
+        ));
   }
 }
