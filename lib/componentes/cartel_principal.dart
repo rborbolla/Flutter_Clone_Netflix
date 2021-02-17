@@ -1,6 +1,7 @@
 import 'package:clone_netflix/componentes/nav_bar_superior.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Cartel_Principal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
