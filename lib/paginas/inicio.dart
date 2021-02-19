@@ -41,35 +41,35 @@ class StartPage extends StatelessWidget {
         unselectedItemColor: Colors.white24,
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem2
+          BottomNavigationBarItem(
               icon: Icon(Icons.home),
               title: Text(
                 'Inicio',
-                style: TextStyle(fontSize: 12.0),
+                style: TextStyle(fontSize: 10.0),
               )),
           BottomNavigationBarItem(
               icon: Icon(Icons.search),
               title: Text(
                 'Buscar',
-                style: TextStyle(fontSize: 12.0),
+                style: TextStyle(fontSize: 10.0),
               )),
           BottomNavigationBarItem(
               icon: Icon(Icons.library_books_outlined),
               title: Text(
                 'Proximamente',
-                style: TextStyle(fontSize: 12.0),
+                style: TextStyle(fontSize: 10.0),
               )),
           BottomNavigationBarItem(
               icon: Icon(Icons.download_rounded),
               title: Text(
                 'Descargas',
-                style: TextStyle(fontSize: 12.0),
+                style: TextStyle(fontSize: 10.0),
               )),
           BottomNavigationBarItem(
               icon: Icon(Icons.more_horiz),
               title: Text(
                 'Más',
-                style: TextStyle(fontSize: 12.0),
+                style: TextStyle(fontSize: 10.0),
               )),
         ]);
   }
